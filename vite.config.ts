@@ -12,7 +12,7 @@ export default defineConfig((config: UserConfig) => {
   const isLib = config.mode === 'lib'
   /* eslint-enable  */
   return {
-    base: isDev ? './' : '/', // 打包路径
+    base: isDev ? './' : './', // 打包路径
     plugins: [vue()],
     resolve: {
       alias: {
@@ -27,13 +27,13 @@ export default defineConfig((config: UserConfig) => {
         fileName: format => `condition-parser.${format}.js`,
       } : false,
       rollupOptions: {
-        input: {
-          // index: resolve(__dirname, 'src/index.html'),
-          index: resolve(__dirname, 'example.html'),
-        },
+        // input: {
+        //   index: resolve(__dirname, 'example.html'),
+        // },
         // 确保外部化处理那些你不想打包进库的依赖
         // external: ['vue'],
         output: {
+          // name:'index',
           // dir:'docs',
           // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
           // globals: {
