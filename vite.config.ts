@@ -26,16 +26,21 @@ export default defineConfig((config: UserConfig) => {
         name: 'ConditionParser',
         fileName: format => `condition-parser.${format}.js`,
       } : false,
-      // rollupOptions: {
-      //   // 确保外部化处理那些你不想打包进库的依赖
-      //   // external: ['vue'],
-      //   output: {
-      //     // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
-      //     // globals: {
-      //     //   vue: 'Vue'
-      //     // }
-      //   }
-      // },
+      rollupOptions: {
+        input: {
+          // index: resolve(__dirname, 'src/index.html'),
+          index: resolve(__dirname, 'example.html'),
+        },
+        // 确保外部化处理那些你不想打包进库的依赖
+        // external: ['vue'],
+        output: {
+          // dir:'docs',
+          // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
+          // globals: {
+          //   vue: 'Vue'
+          // }
+        }
+      },
       target: 'ES2015', //'esnext', //默认'modules',modules模式Opera、UC、百度浏览器不支持，由于对于移动端，不建议设置modules模式
       assetsInlineLimit: 4096, //默认4096,小于此阈值的导入或引用资源将内联为 base64 编码，以避免额外的 http 请求
       cssCodeSplit: true, //默认true, CSS代码拆分
