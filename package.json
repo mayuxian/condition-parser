@@ -1,6 +1,6 @@
 {
   "name": "condition-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "条件解析执行器",
   "main": "./dist/condition-parser.umd.js",
