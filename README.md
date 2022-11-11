@@ -1,6 +1,8 @@
 # condition-parser
 用于执行表达式的js库
 
+ [Demo链接](https://mayuxian.github.io/condition-parser/)  
+ [源码](https://github.com/mayuxian/condition-parser)  
 ## Installing
 
 Using npm:
@@ -24,8 +26,6 @@ $ yarn add condition-parser
 
  ##  Demo
 
- [Demo链接](https://mayuxian.github.io/condition-parser/)
- [源码](https://github.com/mayuxian/condition-parser)
  ###  init data  (Vue3)  初始数据
  ``` javascript
  const conditions: Ref<Condition[] | undefined> = ref()
