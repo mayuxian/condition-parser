@@ -1,0 +1,37 @@
+# OSX
+.DS_Store
+
+# IDE
+.idea
+
+# npm
+node_modules
+yarn.lock
+package-lock.json
+
+# jest
+coverage
+
+# dev
+src
+test
+types
+build
+babel.config.js
+prettier.config.js
+.eslintrc.json
+.eslintrc.js
+.eslintignore
+.editorconfig
+jest.config.js
+
+#doc
+CONTRIBUTING.md
+docs
+
+#other
+.travis.yml
+.github
+demo
+todo
+*.tgz
