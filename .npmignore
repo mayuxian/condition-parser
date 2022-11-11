@@ -3,9 +3,12 @@
 
 # IDE
 .idea
+.vscode
 
 # npm
 node_modules
+.npmignore
+.npmrc
 yarn.lock
 package-lock.json
 
@@ -13,25 +16,39 @@ package-lock.json
 coverage
 
 # dev
+auto-import
 src
 test
 types
 build
+.browserslistrc
+.env.**
 babel.config.js
 prettier.config.js
+.prettierignore
 .eslintrc.json
 .eslintrc.js
 .eslintignore
 .editorconfig
 jest.config.js
+tsconfig.**.json
+vite.config.ts
+vitest.config.ts
+yarn.lock
+
+# example
+docs
+index.html
 
 #doc
 CONTRIBUTING.md
 docs
+dev.md
 
 #other
 .travis.yml
 .github
+.gitignore
 demo
 todo
 *.tgz

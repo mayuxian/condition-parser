@@ -20,7 +20,7 @@ export default defineConfig((config: UserConfig) => {
       },
     },
     build: {
-      outDir: isLib ? 'lib' : 'docs',
+      outDir: isLib ? 'dist' : 'docs',
       lib: isLib ? {
         entry: resolve(__dirname, 'src/condition-parser.ts'),
         name: 'ConditionParser',

@@ -1,14 +1,22 @@
 {
-  "name": "vite-lib-template",
+  "name": "condition-parser",
   "private": true,
-  "main": "./dist/vite-lib-template.umd.js",
-  "module": "./dist/vite-lib-template.umd.es.js",
+  "description": "条件解析执行器",
+  "main": "./dist/condition-parser.umd.js",
+  "module": "./dist/condition-parser.umd.es.js",
   "exports": {
     ".": {
       "import": "./dist/condition-parser.js",
       "require": "./dist/condition-parser.umd.cjs"
     }
   },
+  "keywords": [
+    "condition",
+    "expression",
+    "condition-parser",
+    "条件",
+    "表达式"
+  ],
   "types": "index.d.ts",
   "version": "1.0.0",
   "scripts": {
