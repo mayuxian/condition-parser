@@ -27,6 +27,15 @@
     "test": "vitest --config ./vitest.config.ts",
     "coverage": "vitest run --coverage --config ./vitest.config.ts"
   },
+  "homepage": "https://github.com/mayuxian/condition-parser/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayuxian/condition-parser.git"
+  },
+  "publishConfig": { "registry": "https://registry.npmjs.org/" },
+  "bugs": {
+    "url": "https://github.com/mayuxian/condition-parser/issues"
+  },
   "dependencies": {
     "element-plus": "^2.2.20",
     "vue": "^3.2.44",
